@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom,#8A0067, #D73AB1, #570041);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <span>Quer casar comigo?</span>
+    <button >Sim</button>
+    <button>Não</button>
+
+    <script>
+        const sim = document.querySelector('button:nth-child(2)');
+        const nao = document.querySelector('button:nth-child(3)');
+
+        sim.addEventListener('click', () => {
+            alert('Que bom!');
+        });
+
+        nao.addEventListener('mouseover', () => {
+            nao.style.position = 'absolute';
+            nao.style.top = Math.random() * 100 + '%';
+            nao.style.left = Math.random() * 100 + '%';
+        });
+    </script>
+</body>
+</html>
